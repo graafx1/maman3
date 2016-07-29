@@ -1,0 +1,184 @@
+html { 
+ position:relative; 
+ min-height:100%;
+}
+body {
+    background: rgba(252,236,252,1);
+background: -moz-linear-gradient(45deg, rgba(252,236,252,1) 0%, rgba(245,196,230,1) 28%, rgba(235,174,216,1) 80%, rgba(255,124,216,1) 97%, rgba(255,124,216,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(252,236,252,1)), color-stop(28%, rgba(245,196,230,1)), color-stop(80%, rgba(235,174,216,1)), color-stop(97%, rgba(255,124,216,1)), color-stop(100%, rgba(255,124,216,1)));
+background: -webkit-linear-gradient(45deg, rgba(252,236,252,1) 0%, rgba(245,196,230,1) 28%, rgba(235,174,216,1) 80%, rgba(255,124,216,1) 97%, rgba(255,124,216,1) 100%);
+background: -o-linear-gradient(45deg, rgba(252,236,252,1) 0%, rgba(245,196,230,1) 28%, rgba(235,174,216,1) 80%, rgba(255,124,216,1) 97%, rgba(255,124,216,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(252,236,252,1) 0%, rgba(245,196,230,1) 28%, rgba(235,174,216,1) 80%, rgba(255,124,216,1) 97%, rgba(255,124,216,1) 100%);
+background: linear-gradient(45deg, rgba(252,236,252,1) 0%, rgba(245,196,230,1) 28%, rgba(235,174,216,1) 80%, rgba(255,124,216,1) 97%, rgba(255,124,216,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8', GradientType=1 );
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100%;
+    min-width:900px;
+    margin-top: -15px;
+}
+a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    color: red;
+   }
+a:hover {
+    color: black;
+}
+#menu {
+   width: 694px;
+   margin-left: 17%;
+}
+ul {
+    display: block;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+    color: black;
+    font-family: 'Bad Script', cursive;
+    font-size: 22pt;
+}
+ul.menu > li > a:hover {
+    background-color: #EE82EE;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 164px;
+    top: 78px;
+    left: 0;
+    background-color: white;
+    
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: black;
+    background-color: #D8BFD8;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    font-size: 11pt;
+}
+ul.submenu > li > a:hover {
+    background-color: #EE82EE;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+.mainjpg {
+    max-width: 694px;
+    width: 694px;
+    margin-left: 17%;
+    margin-top: -16px;
+    clear: both;
+    }
+#table {
+border-spacing: 0 10px;
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+margin: 0 auto;
+margin-left: 19%;
+margin-bottom: 50px;
+}
+tr {
+padding: 10px 20px;
+background: #DDA0DD;
+color: black;
+border-right: 2px solid; 
+font-size: 0.9em;
+}
+tr:first-child {
+text-align: left;
+}
+tr:last-child {
+border-right: none;
+}
+td {
+vertical-align: middle;
+padding: 10px;
+font-size: 20px;
+font-family: 'Kurale', serif;
+text-align: center;
+border-top: 1px solid #56433D;
+border-bottom: 1px solid #56433D;
+border-right: 1px solid #56433D;
+}
+td:first-child {
+border-left: 1px solid #56433D;
+border-right: none;
+}
+td:nth-child(2){
+text-align: left;
+}
+#footer {
+ clear:both;
+ height: 100px; 
+ background: #EE82EE;
+ position: relative;
+ bottom: 1px;
+ width: 694px;
+ max-width: 1920px;
+ margin-left: 17%;
+}
+#address {
+    float: left;
+    width: 215px;
+    padding-left: 35px;
+    font-family: 'Kurale', serif;
+    font-size: 11pt;
+    margin-top: 20px;
+    line-height: 0.2;
+}
+#phone {
+    float: left;
+    width: 215px;
+    font-family: 'Kurale', serif;
+    font-size: 11pt;
+    margin-top: 20px;
+    line-height: 0.2;
+}
+#time {
+    float: left;
+    width: 215px;
+    font-family: 'Kurale', serif;
+    font-size: 11pt;
+    margin-top: 20px;
+    line-height: 0.2;
+}
+#address img {
+    float: left;
+    padding: 10px;
+    width: 46px;
+    height: 46px;
+}
+#phone img {
+    float: left;
+    padding: 10px;
+    width: 46px;
+    height: 46px;
+}
+#time img {
+    float: left;
+    padding: 10px;
+    width: 46px;
+    height: 46px;
+}

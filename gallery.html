@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" media="(min-width: 1237px) and (max-width: 1541px)" href="css/gallery0.css">
+    <link rel="stylesheet" media="(max-width: 1236px)" href="css/gallery4.css">
+    <title>Галерея</title>
+</head>
+<body>
+   <div id="menu">
+       <ul class="menu">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href=#>Процедури</a>
+                <ul class="submenu">
+                    <li><a href="ultrazvukova.html">Ультразвукова чистка</a></li>
+                    <li><a href="elektroporaciya.html">Електропорація обличчя</a></li>
+                    <li><a href="rf-lifting.html">RF-ліфтинг обличчя, декольте</a></li>
+                    <li><a href="carboxi.html">Карбокситерапія</a></li>
+                    <li><a href="piling.html">Пілінги</a></li>
+                    <li><a href="micro-needling.html">Мікроголкова мезотерапія</a></li>
+                    <li><a href="massage.html">Масаж обличчя, декольте</a></li>
+                </ul>
+            </li>
+            <li><a href="prices.html">Ціни</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+   </div>
+   <img src="images/logo3.jpg" class="mainjpg" alt="Логотип">
+  <div id="container">
+		<div id="example">
+			<div id="slides">
+				<div class="slides_container">
+					<div>
+						<a href="images/salon(1).jpg" title="Апарат для RF-ліфтингу" target="_blank"><img src="images/salon(1).jpg" width="690" height="470" alt="Апарат для RF-ліфтингу"></a>
+					</div>
+					<div>
+						<a href="images/salon(2).jpg" title="Сертифікат" target="_blank"><img src="images/salon(2).jpg" width="690" height="470" alt="Сертифікат"></a>
+					</div>
+					<div>
+						<a href="images/salon(3).jpg" title="Сертифікат" target="_blank"><img src="images/salon(3).jpg" width="690" height="470" alt="Сертифікат"></a>
+					</div>
+					<div>
+						<a href="images/salon(4).jpg" title="Апарат для RF-ліфтингу" target="_blank"><img src="images/salon(4).jpg" width="690" height="470" alt="Апарат для RF-ліфтингу"></a>
+					</div>
+					<div>
+						<a href="images/salon(5).jpg" title="Сертифікат" target="_blank"><img src="images/salon(5).jpg" width="690" height="470" alt="Сертифікат"></a>
+					</div>
+					<div>
+						<a href="images/salon(6).jpg" title="Сертифікат"><img src="images/salon(6).jpg" width="690" height="470" alt="Сертифікат"></a>
+					</div>
+					<div>
+						<a href="images/salon(7).jpg" title="Апарат для електропорації" target="_blank"><img src="images/salon(7).jpg" width="690" height="470" alt="Апарат для електропорації"></a>
+					</div>
+				</div>
+				<a href="#" class="prev"><img src="images/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="images/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+			<img src="images/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">
+		</div>
+	</div>
+    <div id="footer">
+       <div id="address">
+           <img src="images/placeholder.png" alt="Розташування">
+           <p><b>Львів</b></p>
+           <p>вул. Японська, 16</p>
+           <p>Імідж-студія "Моне"</p>
+       </div>
+       <div id="phone">
+           <img src="images/phone-call.png" alt="Телефон">
+           <p><b>Тетяна Савва</b></p>
+           <p>+38 067 960 46 20</p>
+       </div>
+       <div id="time">
+           <img src="images/clock.png" alt="Години роботи">
+           <p><b>Час роботи</b></p>
+           <p>Пн-Сб 10:00-20:00</p>
+           <p>Нд 10:00-15:00</p>
+       </div>
+   </div>
+<script src="js/jquery-1.4.4.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log(current);
+					};
+				}
+			});
+		});
+	</script>
+</body>
+</html>
